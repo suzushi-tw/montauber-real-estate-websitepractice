@@ -1,106 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="html&css practice" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <title>html & css practice</title>
-    </head>
-    <body>
-        <!-- header-->
-        <header id="header">
-            <h1 class="title">
-                <a href="#">ShinCode</a>
-            </h1>
-            <nav>
+    <title>房地產一頁式網站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>Huang Immobilien</h1>
+            </div>
+            <div class="nav">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UChJQtHFPwLbNwtVpufdMkcQ" 
-                        target="_blank" rel="noopener noreferrer">
-                        <img src="./img/youtube.png" alt="youtube" class="icon" />
-                        </a>
-                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Ausstattung</a></li>
+                    <li><a href="#">Balkon</a></li>
+                    <li><a href="#">Ort</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
-            </nav>
-        </header>
-
-        <!--Main-->
-        <div id="--Main--">
-            <picture>
-                <source media="(max-width: 600px)" srcset="./img/main-sp.jpg" />
-                <img src="./img/main-sp.jpg" alt=""/> 
-            </picture>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="img/IMG-3399.jpg" alt="banner"> 
+            <div class="banner-text">
+                <h2>Willkommen bei Luxus Wohnung in Montabaur</h2>
+                <p>Wir bieten Ihnen die beste Raumausstattung und Balkon</p>
+                <button class="main__btn"><a href="https://www.immobilienscout24.de/" target="_blank" rel="noopener noreferrer">Mehr Erfahren</a></button>
+            </div>
+        </div>
+        <div class="title">
+            <h2>Ort</h2>
         </div>
 
-        <!--about-->
-        <section id="about" class="wrapper">
-            <h2 class="sec-title">About</h2>
-            <ul>
-                <li>html & css practice</li>
-                <li>learning web development</li>
-                <li>basic web layout and static website</li>
-                <li>contact: xxxxxxx@xxx.com</li>
-            </ul>
-            <P>
-                The beginning of front end coding journey
-            </P>
-        </section>
+        <!-----main开始------->
+    <!-- <div class="main">
+        <div class="left">
+            <div class="title">
+             
+            </div>
+            <img src="images/left-img.jpg" />
+        </div>
+        <div class="right">
+            <div class="box1">
+                <div class="wen">
+                    <h1>Montabaur</h1>
+                    <p> ist die Kreisstadt des Westerwaldkreises in Rheinland-Pfalz. 
+                        Sie ist gleichzeitig Verwaltungssitz der Verbandsgemeinde Montabaur, 
+                        der weitere 24 Ortsgemeinden angehören. Gemäß Landesplanung ist Montabaur als Mittelzentrum ausgewiesen.
+                        Überregional bekannt sind das Schloss Montabaur, das Fashion-Outlet-Center 
+                        und der Bahnhof Montabaur mit ICE-Anbindung an der Schnellfahrstrecke Köln–Rhein/Main.</p>
+                </div>
+                <div>
+                    <img src="img/Schloss_Montabaur_010 (1).jpg" />
+                </div>
+            </div>
+        <div class="box2">
+            <div>
+                <img src="img/17_KW50_SEM_ICEBhf_Bild2-1200-px.jpg" />
+            </div>
+            <div class="wen">
+                <h1>Verkehr</h1>
+                <p>Mit ICE Anschluss beträgt die Reisezeit nach Frankfurt am Main Ca. 1 Stude. </p>
+            </div>
+        </div>
+    
+        </div>
+    
+    </div> -->
 
-        <!--works-->
-        <section id="works" class="wrapper">
-            <h2 class="sec-title">Works</h2>
-            <ul>
-                <li><img src="./img/works1.jpg" alt="works1"/></li>
-                <li><img src="./img/works2.jpg" alt="works1"/></li>
-                <li><img src="./img/works3.jpg" alt="works1"/></li>
-                <li><img src="./img/works4.jpg" alt="works1"/></li>
-                <li><img src="./img/works5.jpg" alt="works1"/></li>
-                <li><img src="./img/works6.jpg" alt="works1"/></li>
-                <li><img src="./img/works3.jpg" alt="works1"/></li>
-                <li><img src="./img/works4.jpg" alt="works1"/></li>
-                <li><img src="./img/works1.jpg" alt="works1"/></li>
-            </ul>
-        </section>
+    <section class="about-us" id="about-us">
+        <div class="about-us__image">
+          <div class="about-us__image-montabauer">
+            <img src="img/Montabaur1.jpg" alt="location"  />
+          </div>
+  
+          <button class="about-us__button">
+            <a href="https://www.google.com/maps/place/56410%E8%92%99%E5%A1%94%E9%AE%91%E7%88%BE/
+            @50.4202947,7.6421924,11z/data=!3m1!4b1!4m6!3m5!1s0x47bc2a97dbea3497:0x789a1bd24fa7363e!8m2!3d50.
+            4358385!4d7.8257953!16zL20vMGJ6bnlw?entry=ttu" target="_blank" rel="noopener noreferrer">
+                Learn More
+                <img src="img/arrow-up-right.svg" alt="learn more" />
+            </a>
+          </button>
+  
+          <div class="about-us__image-train">
+            <img src="img/17_KW50_SEM_ICEBhf_Bild2-1200-px.jpg" alt="location"  />
+          </div>
+        </div>
+  
+        <div class="about-us__content">
+          <p class="location__title">Montabaur</p>
+          <p class="location__description">ist die Kreisstadt des Westerwaldkreises in Rheinland-Pfalz. 
+            Sie ist gleichzeitig Verwaltungssitz der Verbandsgemeinde Montabaur, 
+            der weitere 24 Ortsgemeinden angehören. Gemäß Landesplanung ist Montabaur als Mittelzentrum ausgewiesen.
+            Überregional bekannt sind das Schloss Montabaur, das Fashion-Outlet-Center 
+            und der Bahnhof Montabaur mit ICE-Anbindung an der Schnellfahrstrecke Köln–Rhein/Main
+          </p>
+          <h3 class="location__subtitle">Mit ICE Anschluss beträgt die Reisezeit nach Frankfurt am Main Ca. 1 Stude. </h3>
+        </div>
+      </section>
+    
+    <!-----main结束------->
+        <div class="content">
+            <div class="title">
+                <h2>Innenausstattung</h2>
+            </div>
+        </div>
+        
+        <div class="introduce">
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./img/IMG-3400.JPG" alt="">
+                <span class="introduce_item_title">Das Wohnzimmer ist der gemütlichste Raum im Haus.
+                    Mit Fernseher und Stereoanlage. Es ist der perfekte Ort, um Zeit mit der Familie oder Freunden zu verbringen. 
+                    Man kann dort gemeinsam Filme schauen, Musik hören, Spiele spielen, reden oder einfach nur relaxen.
+                </span>
 
-         <!--News-->
-         <section id="news" class="wrapper">
-            <h2 class="sec-title">News</h2>
-            <dl>
-                <dt>2022/10/29</dt>
-                <dd>the creation of the site</dd>
-                <dt>2022/10/29</dt>
-                <dd>site deployed to server and started operating</dd>
-                <dt>2022/10/29</dt>
-                <dd>login page was created</dd>
-                <dt>2022/10/29</dt>
-                <dd>more content added to the site</dd>
-                <dt>2022/10/29</dt>
-                <dd>final update of the site</dd>
-            </dl>
-        </section>
+            </div>
+            <div class="introduce_item">
+
+                <span class="introduce_item_titles">Großzügiges und modernes dreistöckiges Haus mit Balkon</span>
+                <img class="introduce_item_img" src="./img/IMG-3407.JPG" alt="">
+            </div>
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./img/IMG-3401.JPG" alt="">
+                <span class="introduce_item_title">Moderne und gemütliche Küche mit hochwertiger Ausstattung</span>
+            </div>
+            <div class="introduce_item">
+                <span class="introduce_item_titles">Der Balkon ist der perfekte Ort, 
+                    um sich zu entspannen, zu unterhalten oder zu gärtnern. Sie können dort Ihre 
+                    Lieblingsblumen oder Kräuter pflanzen und pflegen. Sie können dort Ihre Familie oder Freunde einladen und gemeinsam grillen oder plaudern. Sie können dort einfach nur sitzen und lesen oder träumen.
+                </span>
+                <img class="introduce_item_img" src="./img/IMG-3404.JPG" alt="">
+            </div>
+        </div>
+
 
         <!--Contact-->
-        <section id="contact" class="wrapper">
-            <h2 class="sec-title">Contact</h2>
-            <p>聯絡我們
-            </p>
-            <form action="#" method="post">
-              <dl>
-                <dt><label for="name">姓名</label></dt>
-                <dd><input type="text" id="name"></dd>
-                <dt><label for="email">電子郵件</label></dt>
-                <dd><input type="email" id="email"></dd>
-                <dt><label for="name">内容</label></dt>
-                <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
-              </dl>
-              <div class="button"><input type="submit" value="送信"></div>
-            </form>
-        </section>
-    </body>
+        <div class="title">
+            <h2>Kontakt</h2>
+        </div>
+        <div class="contact_us_2">
+            <div class="responsive-container-block big-container">
+              <div class="blueBG">
+              </div>
+              <div class="responsive-container-block container">
+                <form class="form-box">
+                  <div class="container-block form-wrapper">
+                    <p class="text-blk contactus-head">
+                      Get in Touch
+                    </p>
+                    <p class="text-blk contactus-subhead">
+                      Schreiben sie uns eine Email
+                    </p>
+                    <div class="responsive-container-block">
+                      <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
+                        <p class="text-blk input-title">
+                           VORNAME
+                        </p>
+                        <input class="input" id="ijowk" name="FirstName" placeholder="Please enter first name...">
+                      </div>
+                      <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                        <p class="text-blk input-title">
+                          NACHNAME
+                        </p>
+                        <input class="input" id="indfi" name="Last Name" placeholder="Please enter last name...">
+                      </div>
+                      <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                        <p class="text-blk input-title">
+                          EMAIL
+                        </p>
+                        <input class="input" id="ipmgh" name="Email" placeholder="Please enter email...">
+                      </div>
+                      <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                        <p class="text-blk input-title">
+                          Telephone Nummer
+                        </p>
+                        <input class="input" id="imgis" name="PhoneNumber" placeholder="Please enter phone number...">
+                      </div>
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
+                        <p class="text-blk input-title">
+                          INHALT
+                        </p>
+                        <textarea class="textinput" id="i5vyy" placeholder="Please enter query..."></textarea>
+                      </div>
+                    </div>
+                    <button class="submit-btn">
+                      Senden
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        <div class="footer">
+            <p>All right reserved © 2023 </p>
+        </div>
+    </div>
+</body>
 </html>
